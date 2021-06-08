@@ -7,9 +7,9 @@ It allows 3 hour forecasts, up to five days, from a single city
 
 ## Setup
 
-Android Studio is used to program this app for Android. 
+Android Studio is used to program this app for Android. The directory named "WeatherApp" containing this app should be opened as usual from Android Studio.
 
-The API key must also be provided by the user. Replace "YOUR_API_KEY_HERE" with the API key from OpenWeatherMap. 
+The OpenWeatherMap API key must also be provided by the user. Replace "YOUR_API_KEY_HERE" with the API key from OpenWeatherMap. 
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -26,4 +26,4 @@ Note that depending on what API key is used, there may be a limitation on how ma
 
 ## License
 
-This project is licensed under the terms of the BSD-3 license.
+This project is licensed under the terms of the BSD-2 license.
