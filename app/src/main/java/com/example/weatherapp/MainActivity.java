@@ -1,20 +1,9 @@
 package com.example.weatherapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-import androidx.core.content.ContextCompat;
 
-import android.Manifest;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Location;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -24,9 +13,10 @@ import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.google.android.gms.location.FusedLocationProviderClient;
+import com.example.weatherapp.data.Global;
+import com.example.weatherapp.functionality.Functionality;
+import com.example.weatherapp.utility.FetchService;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.tasks.OnSuccessListener;
 
 
 /**
@@ -108,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
         // IMPORTANT!!!
         Functionality.fetch(this,city);
-        Intent serviceIntent = new Intent(this,FetchService.class);
+        Intent serviceIntent = new Intent(this, FetchService.class);
         startService(serviceIntent);
     }
 }

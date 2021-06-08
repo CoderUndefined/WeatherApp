@@ -17,11 +17,11 @@
         android:theme="@style/AppTheme">
 
         <service
-            android:name=".HelloIntentService"
+            android:name=".utility.HelloIntentService"
             android:exported="false"/>
 
         <service
-            android:name=".FetchService"
+            android:name=".utility.FetchService"
             android:exported="false"/>
 
         <activity android:name=".MainActivity">

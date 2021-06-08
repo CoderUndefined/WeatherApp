@@ -1,4 +1,4 @@
-package com.example.weatherapp;
+package com.example.weatherapp.utility;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -6,6 +6,10 @@ import android.util.Log;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+
+import com.example.weatherapp.functionality.Functionality;
+import com.example.weatherapp.data.Global;
+import com.example.weatherapp.R;
 
 /**
  * Basic FetchService to fetch data for every minute in the background

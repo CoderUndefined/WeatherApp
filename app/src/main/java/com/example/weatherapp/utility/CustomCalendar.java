@@ -1,4 +1,4 @@
-package com.example.weatherapp;
+package com.example.weatherapp.utility;
 
 import java.time.LocalDateTime;
 
@@ -14,7 +14,7 @@ public class CustomCalendar {
      * @param utc raw UTC time
      * @return Clock time in HH:MM format
      */
-    static String calculateClockTimeFromUTC(long utc) {
+    public static String calculateClockTimeFromUTC(long utc) {
         // 1s
         // 1min = 60s
         // 1h = 60min = 3600s
@@ -43,7 +43,7 @@ public class CustomCalendar {
      * @param hours offset in hours
      * @return Current time plus the offset in hours
      */
-    static String calculateDateFromUTC(long hours) {
+    public static String calculateDateFromUTC(long hours) {
         LocalDateTime localDate = LocalDateTime.now();
         localDate = localDate.plusHours(hours+3);
         return localDate.getDayOfMonth() + "." + localDate.getMonthValue() + "." + localDate.getYear();

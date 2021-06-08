@@ -1,11 +1,11 @@
-package com.example.weatherapp;
+package com.example.weatherapp.data;
 
 import android.widget.TextView;
 
 /**
  * Data class containing all TextViews from the user interface.
  */
-class UserInterface {
+public class UserInterface {
     TextView windDescription;
     TextView cloudinessDescription;
     TextView pressureDescription;
